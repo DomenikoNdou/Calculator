@@ -1,7 +1,6 @@
 package org.example;
 
-public class Calculator
-{
+public class Calculator {
     public int add(int a, int b){
         return a + b;
     }
@@ -17,5 +16,10 @@ public class Calculator
         }
         return a / b;
     }
-
+    public double sqrt(double x){
+        if (x < 0){
+            throw new IllegalArgumentException("Square root of negative number not allowed");
+        }
+        return Math.sqrt(x);
+    }
 }
